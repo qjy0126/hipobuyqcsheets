@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Find — HipoBuySpreadsheet</title>
+  <meta name="description" content="Preview a HipoBuySpreadsheet find, then open Hipobuy to order." />
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="item">
+  <header class="topbar">
+    <div class="wrap topbar-row">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="" />
+        <span class="brand-name">HipoBuy<b>Spreadsheet</b></span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="guides/index.html">Guide</a>
+        <a href="how-to-buy.html">Help Center</a>
+        <a class="pill" href="browse.html">Spreadsheet ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap item-page">
+    <nav class="crumbs" id="crumbs"></nav>
+    <div class="item-layout">
+      <div class="gallery">
+        <div class="main" id="item-stage">
+          <img id="item-main" alt="" />
+        </div>
+      </div>
+      <div class="item-info">
+        <h1 id="item-title">Loading…</h1>
+        <div class="price" id="item-price"></div>
+        <p class="item-rating" id="item-rating"></p>
+        <a class="btn btn-gold btn-buy" id="buy-link" target="_blank" rel="noopener">Buy on Hipobuy</a>
+        <p class="item-note" id="item-note"></p>
+      </div>
+    </div>
+    <section class="related">
+      <h2>More in this category</h2>
+      <div class="product-grid" id="related-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot-note">Independent directory — checkout stays on Hipobuy. <a href="privacy.html">Privacy Policy</a> · <a href="disclaimer.html">Disclaimer</a></div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>

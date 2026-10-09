@@ -1,0 +1,15 @@
+.DS_Store
+*.pem
+.~*
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.xlsx
+node_modules/
+.wrangler/
+dist/
+
+# Product photos are huge — served from CDN (hipobuyspreadsheet), not this repo.
+img/products
+img/products/

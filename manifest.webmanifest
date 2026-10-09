@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "HipoBuySpreadsheet",
+  "short_name": "HipobuySheet",
+  "description": "HipoBuySpreadsheet — visual catalog of Taobao, Weidian, and 1688 finds with QC photos.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#16324f",
+  "theme_color": "#16324f",
+  "icons": [
+    {
+      "src": "img/pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

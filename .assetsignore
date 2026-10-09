@@ -1,0 +1,11 @@
+# Cloudflare Workers static assets — skip product photo library
+img/products/**
+*.webp
+*.xlsx
+__pycache__/
+*.pyc
+.venv/
+venv/
+.git/**
+node_modules/**
+.wrangler/**

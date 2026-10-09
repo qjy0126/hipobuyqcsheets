@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HipoBuySpreadsheet QC Finder — Search by Name or Item ID</title>
+  <meta name="description" content="HipoBuySpreadsheet QC Finder: search product names, brands or numeric item IDs to open matching QC-backed catalog finds." />
+  <link rel="canonical" href="https://hipobuyqcsheets.com/finder.html" />
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body data-page="shop">
+  <header class="site-header">
+    <div class="topbar">
+      <div class="wrap topbar-row">
+        <a class="brand" href="index.html" aria-label="HipoBuySpreadsheet home">
+          <img src="img/logo.png" alt="" width="40" height="40" />
+          <span class="brand-text">
+            <span class="brand-name">HipoBuy<span>Spreadsheet</span></span>
+            <span class="brand-sub">QC Sheet · Finder · Catalog</span>
+          </span>
+        </a>
+        <nav class="nav-rail" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a class="is-on" href="finder.html">QC Finder</a>
+          <a href="sheets.html">QC Sheets</a>
+          <a href="browse.html">Spreadsheet</a>
+          <a href="guides/index.html">Guides</a>
+        </nav>
+        <div class="top-actions">
+          <a class="top-cta" href="browse.html">Open Spreadsheet</a>
+          <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" onclick="document.body.classList.toggle('nav-open');this.setAttribute('aria-expanded',document.body.classList.contains('nav-open'))">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="cat-strip">
+      <div class="wrap cat-row">
+        <a href="browse.html?cat=shoes">Sneakers</a>
+        <a href="browse.html?cat=hoodies">Hoodies</a>
+        <a href="browse.html?cat=t-shirts">Tees</a>
+        <a href="browse.html?cat=jackets">Jackets</a>
+        <a href="browse.html?cat=jersey">Jerseys</a>
+        <a href="browse.html?cat=accessories">Accessories</a>
+        <a href="browse.html?cat=watches">Watches</a>
+        <a href="browse.html?cat=headwear">Hats</a>
+        <a href="browse.html">All finds →</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap page">
+    <div class="page-intro">
+      <span class="kicker">QC Finder</span>
+      <h1>Search QC photos by name or item ID</h1>
+      <p>Paste a product name, brand, or numeric Weidian / HipoBuy item ID. Matching archive rows open with photos and source links.</p>
+    </div>
+    <form class="catalog-search" action="finder.html" method="get">
+      <input id="shop-q" name="q" placeholder="Product name, brand, or item ID…" autofocus />
+      <button class="btn" type="submit">Find QC</button>
+    </form>
+    <div class="catalog-top">
+      <p id="shop-count">Loading catalog…</p>
+      <select id="sort">
+        <option value="latest">Default sorting</option>
+        <option value="popular">Sort by popularity</option>
+        <option value="rating">Sort by average rating</option>
+        <option value="price-asc">Sort by price: low to high</option>
+        <option value="price-desc">Sort by price: high to low</option>
+      </select>
+    </div>
+    <div class="product-grid" id="product-grid"></div>
+    <nav class="pager" id="pager"></nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot-note">© 2026 HipoBuySpreadsheet · hipobuyqcsheets.com — independent directory.</div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/catalog.js?v=20261009b"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
