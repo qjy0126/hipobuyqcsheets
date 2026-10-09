@@ -1,4 +1,5 @@
-# Cloudflare Workers static assets — skip product photo library
+# Cloudflare Workers static assets — skip product photo library & tooling
+img/products
 img/products/**
 *.webp
 *.xlsx
@@ -6,6 +7,16 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+.git
 .git/**
+node_modules
 node_modules/**
+.wrangler
 .wrangler/**
+generate.py
+generate_items.py
+import_excel_products.py
+package.json
+package-lock.json
+wrangler.toml
+README.md

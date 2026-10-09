@@ -1,0 +1,8 @@
+name = "hipobuyqcsheets"
+compatibility_date = "2026-10-09"
+
+# Static HTML site. Product photos stay on CDN — excluded via .assetsignore.
+[assets]
+directory = "./"
+not_found_handling = "none"
+html_handling = "auto-trailing-slash"
